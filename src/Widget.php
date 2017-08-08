@@ -1,13 +1,12 @@
 <?php
 namespace tunect\Yii2Modal;
 
-use yii\base\Widget;
 use yii\bootstrap\Modal;
 
 /**
  * $assets \yii\web\AssetBundle
  */
-class Widget extends Widget
+class Widget extends \yii\base\Widget
 {
 	private $assets;
 

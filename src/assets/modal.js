@@ -1,10 +1,10 @@
 function displayModal($button) {
 	var url = $button.prop("tagName") === "A" ? $button.attr("href") : $button.attr("value");
 	var params = $button.data("params");
-	var title = $button.attr('title') !== undefined ? $button.attr("title") : $button.text();
+	var title = $button.attr("title") !== undefined ? $button.attr("title") : $button.text();
 
 	if (!$("#modal").data("bs.modal").isShown) {
-		$('#modal').modal("show");
+		$("#modal").modal("show");
 	}
 	$("#modal").find("#modalContent").load(url, params, function (responseText, textStatus, req) {
 		if (req.status !== 200) {
@@ -35,7 +35,7 @@ $(function () {
 			if (title !== undefined) {
 				$("#modalHeaderTitle").html("<h4>" + title + "</h4>");
 			}
-			$('#modalContent').html(text);
+			$("#modalContent").html(text);
 		};
 
 		$('#modalContent').html('<div style="text-align:center"><img src="/css/loader.gif"></div>');

@@ -3,7 +3,7 @@ namespace tunect\Yii2Modal;
 
 class Asset extends \yii\web\AssetBundle
 {
-    public $basePath = '@tunect/yii2-modal';
+    public $sourcePath  = '@tunect/Yii2Modal';
     public $baseUrl = '@web';
 
     public $js = [

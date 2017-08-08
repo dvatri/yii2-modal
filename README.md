@@ -12,7 +12,7 @@ That's it, module will work. Additional settings are optional.
 
 ## Module settings
 
-To specify module name (default name is `modal`) set it in index.php or in config file (before config goes to Application constructor):
+To specify module name (default name is "`modal`") set it in index.php or in config file (before config goes to Application constructor):
 
 	\tunect\Yii2Modal\Module::$moduleName = 'custom-modal';
 

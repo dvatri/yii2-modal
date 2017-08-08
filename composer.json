@@ -1,0 +1,24 @@
+{
+    "name": "tunect/yii2-modal",
+    "description": "Yii2 Bootstrap Modal wrapper",
+    "type": "yii2-extension",
+    "license": "BSD-3-Clause",
+    "autoload": {
+        "psr-4": {
+            "tunect\\Yii2Modal\\": "src"
+        }
+    },
+    "authors": [
+        {
+            "name": "Tunect",
+            "email": "mail@tunect.ru"
+        }
+    ],
+    "require": {
+		"php": "^5.6 || ^7.0 || ^7.1",
+        "yiisoft/yii2": "^2.0.10"
+    },
+    "extra": {
+        "bootstrap": "tunect\\Yii2Modal\\Bootstrap"
+	}
+}

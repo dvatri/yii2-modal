@@ -14,7 +14,7 @@ class Widget extends \yii\base\Widget
     {
         parent::init();
 		$this->assets = Asset::register(\Yii::$app->getView());
-		$this->view->registerJs('var tunect_assets_path = "' . $this->assets->baseUrl . '";');
+		$this->view->registerJs('tunect_assets_path = "' . $this->assets->baseUrl . '";');
     }
 
     public function run()

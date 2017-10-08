@@ -38,7 +38,7 @@ $(function () {
 			$("#modalContent").html(text);
 		};
 
-		$('#modalContent').html('<div style="text-align:center"><img src="/css/loader.gif"></div>');
+		$('#modalContent').html('<div style="text-align:center"><img src="' + tunect_assets_path + '/assets/loader.gif"></div>');
 
 		// submit form
 		$.ajax({
